@@ -1,0 +1,14 @@
+{
+  "name": "browsersync-demo",
+  "version": "1.0.0",
+  "description": "Browsersync with Express config",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joshua Thomas",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.17.1"
+  }
+}

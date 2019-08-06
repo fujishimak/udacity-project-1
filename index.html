@@ -1,0 +1,319 @@
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>J. Thomas Portfolio</title>
+	<!-- CSS Styles -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style type="text/css">
+
+		
+		body {
+			background: #7d97ad;		
+	
+		}
+
+		#wrapper {
+
+			max-width: 900px;
+			margin: auto;
+			background-color: #f5f5f5;
+		}
+
+		
+
+		#logo-container {
+		  position: relative;
+		  width: 60px;
+		  height: 60px;
+		  overflow: hidden;
+		  border-width: 2px;
+		  border-style: solid;
+		  border-radius: 50%;
+		  border-color: #02b3e4;
+		  margin-right: 50px;
+		}
+
+		#logo {
+		  position: absolute;
+		  top: -9999px;
+		  left: -9999px;
+		  right: -9999px;
+		  bottom: -9999px;
+		  margin: auto;
+		  padding-top: 30px;
+		  padding-right: 10px;
+		  width: 90px;
+		  height: auto;
+		}
+
+
+
+		#hero > div {
+			text-align: center;
+			background-image: url(https://res.cloudinary.com/thomasjet/image/upload/v1564892161/udacity/project-1/tech-background-hd-3.jpg);
+			background-size: cover;
+			-webkit-background-size: cover;
+		    -moz-background-size: cover;
+		    -o-background-size: cover;
+			width: 100%;
+			padding-left: 0px;
+			padding-right: 0px;
+			height: 400px;		
+
+		}
+
+
+		#blurb {
+
+			background: rgba(0, 0, 0, 0.7);
+			height: 50%;
+			width: 50%;
+			color: white;
+			text-align: center;
+			margin: auto;
+			position: relative;
+			top: 25%;
+			padding: 10px 20px 10px 20px;
+		}
+
+		
+
+		.section-title {
+
+			padding-top: 20px;
+		}
+
+		#projects > h1,h2,h3,h4,h5 {
+			text-align: center;
+		}
+
+		#projects > div{
+
+			display: flex;
+			
+			justify-content: space-between;
+		}
+
+		#skills {
+
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.card {
+
+			width: 30%;
+			background-color: #f7f7f7;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			transition: box-shadow .3s;
+		}
+
+		.card:hover {
+
+			
+			box-shadow: 0 0 11px rgba(33,33,33,.2); 
+		}
+
+		.card-body {
+
+			background-color: #ffffff;
+			border-radius: 0px 0px 5px 5px;
+		}
+
+		.card-img-top {
+
+			height: 120px;
+			width: 120px;
+			margin: auto;
+		}
+
+		.btn-primary {
+			background-color: #7d97ad;
+			color: #2d3c49;
+			border-color: #7d97ad;
+		}
+
+		.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+			background-color: #02b3e4;
+			color: #f5f5f5;
+			border-color: #02b3e4;
+		}
+
+		footer {
+
+			background-color: #343a40;
+			color: #f5f5f5;
+		}
+
+		/*MEDIA QUERIES*/
+
+		@media screen and (max-width: 360px) {
+
+			#projects > div {
+
+				flex-wrap: wrap;
+			}
+
+			#blurb {
+
+				width: 100%;
+				top: 50%;
+				height: auto;
+				margin: 0px;
+			}
+
+			.card {
+
+				width: 100%;
+			}
+
+			#skills {
+
+				display: flex;
+				flex-wrap: wrap;
+				text-align: center;
+
+			}
+		 	
+		 }
+
+		@media screen and (max-width: 768px) {
+			
+			#blurb {
+
+				width: 100%;
+				top: 30%;
+				height: auto;
+				margin: 0px;
+			}
+
+			.badge {
+
+				width: 100%;
+				margin: 5px;
+			}
+
+		 	
+		 } 
+		
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			  <div id="logo-container">
+				  <a class="navbar-brand" href="#">
+				  		<img id="logo" src="https://res.cloudinary.com/thomasjet/image/upload/v1564896703/udacity/project-1/IMG_4920-30.jpg" alt="Profile Picture">
+				  </a>
+				</div>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav mr-auto">
+			      <li class="nav-item active">
+			        <a class="nav-link" href="#">Blog <span class="sr-only">(current)</span></a>
+			      </li>
+
+			      
+			      <li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			          Featured Work
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          <a class="dropdown-item" href="#">Weather Project</a>
+			          <a class="dropdown-item" href="#">Calculator Project</a>
+			          <a class="dropdown-item" href="#">Task Manager Project</a>
+			        </div>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#">Publications <span class="sr-only">(current)</span></a>
+			      </li>
+			      
+			    </ul>
+			    
+			      <button id="connect-cta" class="btn btn-primary my-2 my-sm-0" type="submit">Let's Connect!</button>
+			   
+			  </div>
+			</nav>
+		</header>
+
+		<section id="hero">
+			<div class="container">
+				<div id="blurb">
+					<h2>Joshua E. Thomas</h2>
+					<h5>Technologist Extraordinaire</h5>
+					<p>IT professional and ICT4D enthusiast with over ten (10) years of experience.</p>
+					<div id="skills">
+						<a href="#" class="badge badge-primary">Business Analysis</a>
+						<a href="#" class="badge badge-primary">Solution Architecture</a>
+						<a href="#" class="badge badge-primary">Project Management</a>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<section id="intro">
+			<div class="container">
+				
+			</div>
+		</section>
+
+		<section id="projects">
+
+			<h2 class="section-title">
+				<span>Featured Work</span>
+			</h2>
+			<div class="container">
+
+				<div class="project card">
+					<img class="card-img-top" src="https://res.cloudinary.com/thomasjet/image/upload/v1564976641/udacity/project-1/weather-icon.png" alt="Weather project">
+					<div class="card-body">
+						<h4>Weather Project</h4>
+    					<p class="card-text">A weather app that displays summary meteorological information based on a user's location.</p>
+  					</div>
+				</div>
+				<div class="project card">
+					<img class="card-img-top" src="https://res.cloudinary.com/thomasjet/image/upload/v1565036726/udacity/project-1/Calculator-icon-sq.png" alt="Calculator project">
+					<div class="card-body">
+						<h4>Calculator Project</h4>
+    					<p class="card-text">A skinnable, basic calculator that also includes recall functionality.</p>
+  					</div>
+				</div>
+				<div class="project card">
+					<img class="card-img-top" src="https://res.cloudinary.com/thomasjet/image/upload/v1565038081/udacity/project-1/MetroUI-Task.png" alt="Task Manager project">
+					<div class="card-body">
+						<h4>Task Manager Project</h4>
+    					<p class="card-text">A Momentum Dash clone that focuses on an improved task manager interface.</p>
+  					</div>
+				</div>	
+			
+			</div>
+		</section>
+
+		<footer class="page-footer font-small blue">
+
+  		<!-- Copyright -->
+		  	<div class="footer-copyright text-center py-3">© 2019 Copyright:
+		    <a href="https://manayaad.me"> Joshua E. Thomas</a>
+		  </div>
+		  <!-- Copyright -->
+
+		</footer>
+<!-- Footer -->
+	</div>
+	
+	<!-- JQuery JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
