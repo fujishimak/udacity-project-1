@@ -1,0 +1,189 @@
+body {
+	background: #7d97ad;		
+
+}
+
+#wrapper {
+
+	max-width: 900px;
+	margin: auto;
+	background-color: #f5f5f5;
+}
+
+
+
+#logo-container {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 50%;
+  border-color: #02b3e4;
+  margin-right: 50px;
+}
+
+#logo {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  right: -9999px;
+  bottom: -9999px;
+  margin: auto;
+  padding-top: 30px;
+  padding-right: 10px;
+  width: 90px;
+  height: auto;
+}
+
+
+
+#hero > div {
+	text-align: center;
+	background-image: url(https://res.cloudinary.com/thomasjet/image/upload/v1564892161/udacity/project-1/tech-background-hd-3.jpg);
+	background-size: cover;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	width: 100%;
+	padding-left: 0px;
+	padding-right: 0px;
+	height: 400px;		
+
+}
+
+
+#blurb {
+
+	background: rgba(0, 0, 0, 0.7);
+	height: 50%;
+	width: 50%;
+	color: white;
+	text-align: center;
+	margin: auto;
+	position: relative;
+	top: 25%;
+	padding: 10px 20px 10px 20px;
+}
+
+
+
+.section-title {
+
+	padding-top: 20px;
+}
+
+#projects > h1,h2,h3,h4,h5 {
+	text-align: center;
+}
+
+#projects > div{
+
+	display: flex;
+	
+	justify-content: space-between;
+}
+
+#skills {
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.card {
+
+	width: 30%;
+	background-color: #f7f7f7;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	transition: box-shadow .3s;
+}
+
+.card:hover {
+
+	
+	box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+.card-body {
+
+	background-color: #ffffff;
+	border-radius: 0px 0px 5px 5px;
+}
+
+.card-img-top {
+
+	height: 120px;
+	width: 120px;
+	margin: auto;
+}
+
+.btn-primary {
+	background-color: #7d97ad;
+	color: #2d3c49;
+	border-color: #7d97ad;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+	background-color: #02b3e4;
+	color: #f5f5f5;
+	border-color: #02b3e4;
+}
+
+footer {
+
+	background-color: #343a40;
+	color: #f5f5f5;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 360px) {
+
+	#projects > div {
+
+		flex-wrap: wrap;
+	}
+
+	#blurb {
+
+		width: 100%;
+		top: 50%;
+		height: auto;
+		margin: 0px;
+	}
+
+	.card {
+
+		width: 100%;
+	}
+
+	#skills {
+
+		display: flex;
+		flex-wrap: wrap;
+		text-align: center;
+
+	}
+ 	
+ }
+
+@media screen and (max-width: 768px) {
+	
+	#blurb {
+
+		width: 100%;
+		top: 30%;
+		height: auto;
+		margin: 0px;
+	}
+
+	.badge {
+
+		width: 100%;
+		margin: 5px;
+	}
+
+ 	
+ } 
